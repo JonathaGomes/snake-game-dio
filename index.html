@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Jogo da cobrinha</title>
+</head>
+<body>
+    <div class="info">
+    <h1>SNAKE GAME</h1>
+    <h2>Leia tudo com atenção :)</h2>
+        <div class="orientacoes">
+            <p>Para controlar a cobra, use as setas(do lado do teclado númerico)  ← → ↑ ↓</p>
+            <p>Você pode selecionar a dificuldade!(caso não escolha, o jogo será no fácil)</p>
+            <select id="dificuldade">
+                <option value="200">Selecione a dificuldade</option>
+                <option value="100">Dificil</option>
+                <option value="150">Médio</option>
+                <option value="200">Fácil</option>
+            </select>
+            <button id="dificulty">Selecionar dificuldade</button>
+            <p>Você pode selecionar se a cobra bater na parede ela morre ou aparece na outra parede</p>
+            <p>Caso não escolha, a cobra irá Atravessar</p>
+            <select id="parede">
+                <option value="vive">Selecione se morre na parede</option>
+                <option value="morre">Morrer na parede</option>
+                <option value="vive">Atravessar parede</option>
+            </select>
+            <button id="wall">Selecionar regra</button>
+            <p>Para iniciar o Jogo aperte o botão "Começar Jogo"</p>
+            <p>Caso você queira mudar a dificuldade ou a regra da parede durante um jogo, você terá que perder ou reiniciar a página</p>
+            <p>Se a tela ficar preta, você perdeu... :(</p>
+            <p>Boa sorte! Se houver algum bug pode me avisar!</p>
+        </div>
+        <button id="game">Começar Jogo</button>
+    </div>
+    <canvas id="snake" height="512" width="512"></canvas>
+    
+</body>
+</html>
